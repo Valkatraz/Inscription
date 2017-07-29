@@ -6,7 +6,7 @@ Inscription is an open source library to display information about your Android 
 Usage
 ============
 **Guide for usage can be found at:
-http://martin.cubeactive.com/inscription/**
+https://github.com/MartinvanZ/Inscription/wiki**
 
 Contains
 ============
