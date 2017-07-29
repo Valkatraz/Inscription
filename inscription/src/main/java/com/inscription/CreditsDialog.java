@@ -1,4 +1,5 @@
 /*
+ * (c) 2013 Martin van Zuilekom (https://github.com/MartinvanZ/Inscription)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,6 +16,21 @@
  */
 package com.inscription;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.pm.PackageManager.NameNotFoundException;
+import android.content.res.Resources;
+import android.content.res.XmlResourceParser;
+import android.util.Log;
+import android.webkit.WebView;
+import android.widget.Toast;
+
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserException;
+
+import java.io.IOException;
 
 /*
  * Class to show a credits dialog
