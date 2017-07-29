@@ -1,0 +1,4 @@
+include ':inscription'
+include ':inscriptionSampleWhatsNewdialog'
+include ':inscriptionSampleCreditsdialog'
+include ':inscriptionSampleChangelog'
