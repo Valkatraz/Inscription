@@ -126,7 +126,7 @@ public class CreditsXMLParser {
     }
 
     /**
-     * Parse a section tag
+     * Parse a section tag.
      *
      * @param xml XmlResourceParser object to parse a section tag
      *
@@ -139,8 +139,12 @@ public class CreditsXMLParser {
         Section result = new Section();
         result.setTitle(xml.getAttributeValue(null, "title"));
         int eventType = xml.getEventType();
-        while ((eventType != XmlPullParser.END_TAG) || (xml.getName().equals("role"))) {
-            if ((eventType == XmlPullParser.START_TAG) && (xml.getName().equals("role"))){
+        //Check for role tag, function tag is added for backwards compatibility.
+        while ((eventType != XmlPullParser.END_TAG)
+                || (xml.getName().equals("role"))
+                || (xml.getName().equals("function"))) {
+            if ((eventType == XmlPullParser.START_TAG)
+                    && ((xml.getName().equals("role")) || (xml.getName().equals("function")))) {
                 result.add(parseRoleTag(xml));
             }
             eventType = xml.next();
