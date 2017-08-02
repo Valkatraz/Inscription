@@ -26,10 +26,10 @@ import android.preference.PreferenceManager;
 /**
  * Class to show a dialog with the latest changes for the current app version.
  */
-public class WhatsNewDialog extends ChangeLogDialog {
+public class WhatsNewHTMLDialog extends ChangeLogHTMLDialog {
     private static final String WHATS_NEW_LAST_SHOWN = "whats_new_last_shown";
 
-    public WhatsNewDialog(final Context context) {
+    public WhatsNewHTMLDialog(final Context context) {
         super(context);
     }
 

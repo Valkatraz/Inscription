@@ -53,8 +53,8 @@ import java.io.IOException;
 	</credits> 
  */
 
-public class CreditsDialog {
-    static final private String TAG = "CreditsDialog"; 
+public class CreditsHTMLDialog {
+    static final private String TAG = "CreditsHTMLDialog";
     
 //    static final private String TITLE_CREDITS = "title_credits"; 
     static final private String CREDITS_XML = "credits"; 
@@ -73,7 +73,7 @@ public class CreditsDialog {
 
 	private int mTitle = R.string.title_credits;
     
-	public CreditsDialog(final Context context) {
+	public CreditsHTMLDialog(final Context context) {
         mContext = context;
     }
 

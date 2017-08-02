@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.demo.R;
-import com.inscription.CreditsDialog;
+import com.inscription.CreditsHTMLDialog;
 
 public class MainActivity extends Activity {
 
@@ -17,13 +17,13 @@ public class MainActivity extends Activity {
 
 	public void onShowCreditsClick(final View v) {
 		//Launch change log dialog
-		final CreditsDialog changeLogDialog = new CreditsDialog(this);
+		final CreditsHTMLDialog changeLogDialog = new CreditsHTMLDialog(this);
 		changeLogDialog.show();
 	}
 
 	public void onCustomStyleClick(final View v) {
 		//Launch change log dialog
-		final CreditsDialog cd = new CreditsDialog(this);
+		final CreditsHTMLDialog cd = new CreditsHTMLDialog(this);
 		cd.setStyle(""
 
 				+ "body { font-size: 9pt; text-align: center; }" 
@@ -38,7 +38,7 @@ public class MainActivity extends Activity {
 
 	public void onCustomStyle2Click(final View v) {
 		//Launch change log dialog
-		final CreditsDialog cd = new CreditsDialog(this);
+		final CreditsHTMLDialog cd = new CreditsHTMLDialog(this);
 		cd.setStyle(""
 
 				+ "body { font-size: 15pt; text-align: center; font-family: sans-serif-condensed;}" 

@@ -40,8 +40,8 @@ import java.util.Date;
 /**
  * Class to show a change log dialog
  */
-public class ChangeLogDialog {
-    private static final String TAG = "ChangeLogDialog";
+public class ChangeLogHTMLDialog {
+    private static final String TAG = "ChangeLogHTMLDialog";
 
     private final Context mContext;
     private String mStyle = "h1 { margin-left: 0px; font-size: 12pt; }"
@@ -52,7 +52,7 @@ public class ChangeLogDialog {
 
     protected DialogInterface.OnDismissListener mOnDismissListener;
 
-    public ChangeLogDialog(final Context context) {
+    public ChangeLogHTMLDialog(final Context context) {
         mContext = context;
     }
 
@@ -122,7 +122,7 @@ public class ChangeLogDialog {
         mStyle = style;
     }
 
-    public ChangeLogDialog setOnDismissListener(final DialogInterface.OnDismissListener onDismissListener) {
+    public ChangeLogHTMLDialog setOnDismissListener(final DialogInterface.OnDismissListener onDismissListener) {
         mOnDismissListener = onDismissListener;
         return this;
     }
