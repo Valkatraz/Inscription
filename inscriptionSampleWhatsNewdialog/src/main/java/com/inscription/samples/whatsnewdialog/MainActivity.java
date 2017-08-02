@@ -1,11 +1,10 @@
 package com.inscription.samples.whatsnewdialog;
 
-import com.inscription.WhatsNewHTMLDialog;
-
-import android.os.Bundle;
 import android.app.Activity;
-import android.view.Menu;
+import android.os.Bundle;
 import android.view.View;
+
+import com.inscription.WhatsNewHTMLDialog;
 
 public class MainActivity extends Activity {
 
@@ -21,13 +20,6 @@ public class MainActivity extends Activity {
         //Launch what's new dialog (will only be shown once)
         final WhatsNewHTMLDialog whatsNewDialog = new WhatsNewHTMLDialog(this);
         whatsNewDialog.show();
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(final Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.activity_main, menu);
-        return true;
     }
 
     public void onShowChangeLogClick(final View v) {
