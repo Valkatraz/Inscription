@@ -1,3 +1,7 @@
+**This library is currently no longer in development**
+If someone wishes to update the library please feel free to create a fork.
+I Hope the current code is still of some use for people.
+
 Inscription
 ===========
 
